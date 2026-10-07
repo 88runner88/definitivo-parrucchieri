@@ -58,9 +58,6 @@
       fbq('init', '796122485903214'); 
       fbq('track', 'PageView');
     </script>
-    <noscript>
-      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=796122485903214&ev=PageView&noscript=1"/>
-    </noscript>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -367,11 +364,15 @@
 
                       <div class="sm:col-span-2 flex flex-col py-2">
                         <div class="flex items-start gap-3">
-                            <input type="checkbox" id="privacy" name="privacy" value="Accettata" required class="accent-[var(--accent)] h-4 w-4 mt-0.5 shrink-0">
-                            <label for="privacy" class="text-[11px] md:text-xs text-[var(--muted)] leading-tight select-none">
-                              Dichiaro di aver preso visione della Privacy Policy e acconsento al trattamento dei dati personali.
-                            </label>
-                        </div>
+    <input type="checkbox" id="privacy" name="privacy" required class="mt-1 accent-[#C0583A] cursor-pointer w-4 h-4 mt-0.5 shrink-0">
+    <label for="privacy" class="text-[11px] md:text-xs text-[var(--muted)] leading-tight select-none">
+        Dichiaro di aver preso visione della 
+        <a href="https://www.iubenda.com/privacy-policy/21741147" class="iubenda-nostyle iubenda-noiframe iubenda-embed text-[var(--ink)] underline hover:text-[#C0583A] transition-colors font-medium" title="Privacy Policy">Privacy Policy</a>
+e acconsento al trattamento dei dati personali.
+    </label>
+
+</div>
+
                         <p class="text-[10px] text-stone-400 mt-2 pl-7 leading-normal">
                             *I dati forniti saranno utilizzati esclusivamente per la verifica dei requisiti di prefattibilità e non saranno ceduti a terzi.
                         </p>
